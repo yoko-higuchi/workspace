@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>session-scope</title>
+  </head>
+  <body>
+    名前を入力
+    <form action="result-session-scope1" th:action="@{/session-scope/input-name}" method="POST">
+      <input type="text" name="name">
+      <button>送信</button>
+    </form>
+  </body>
+</html>
+

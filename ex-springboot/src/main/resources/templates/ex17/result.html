@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>result</title>
+  </head>
+  <body>
+    <h3>入力確認画面</h3>
+    <div>名前 : <span th:text="${domain.name}">dummy</span></div><br>
+    <div>メール : <span th:text="${domain.mail}">dummy</span></div><br>
+    <div>性別 : <span th:text="${domain.sex}">dummy</span></div><br>
+    <div>好きな言語 : <span th:text="${domain.language}">dummy</span></div><br>
+    <div>趣味 : <br>
+    <span th:each="hobby:${domain.hobbyList}">
+      <span th:text="${hobby}">dummy</span><br>
+    </span></div><br>
+    <div>その他 : <br>
+    <span th:text="${domain.comment}">dummy</span><br>
+    </div>
+  </body>
+</html>

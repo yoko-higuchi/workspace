@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>ex-14</title>
+  </head>
+  <body>
+    <table border="1">
+        <span th:each="item, name : ${nameList}">
+        <tr>
+          <td><span th:text="${name.count}">dummy</span></td>
+          <td><span th:text="${item}">dummy</span><br></td>
+        </tr>
+        </span>
+    </table>
+  </body>
+
+</html>
+
